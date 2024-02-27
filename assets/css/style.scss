@@ -1,0 +1,303 @@
+@import "_resets.scss";
+@mixin FlexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+}
+$color-red: #350004;
+$bg-color: #ded8d5;
+
+header{
+    height: 600px;
+    background-color: $bg-color;
+    #nav{
+        @include FlexSpaceBetween;
+        #logo{
+            width: 100px;
+            height: 90px;
+            margin-left: 70px;
+            margin-top: 17px;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        ul{
+           @include FlexSpaceBetween;
+           li{ 
+               padding-right: 40px;
+               padding-top: 30px;
+               font-weight: bolder;
+               font-size: 23px;
+               text-transform: uppercase;
+           }
+             a{ color: $color-red; }
+        }
+    }
+    }
+    #text-box{
+        margin: 12% auto;
+        text-align: center;
+        color: $color-red;
+        text-transform: uppercase;
+        font-size: larger;
+}
+#about{
+    background-color: $bg-color;
+    .tittle{
+        h2{
+            padding-top: 40px;
+            text-align: center;
+            color: $color-red;
+        }
+    }
+    #img-text{
+         width: 80%;
+         @include FlexSpaceBetween;
+         margin: 0px auto;
+         #image{
+            width: 26%;
+            margin: 30px auto;
+            border: 1px solid $bg-color;
+            border-radius: 3%;
+            img{
+                width: 100%;
+                border: 1px solid $bg-color;
+                border-radius: 3%;
+            }
+         }
+         #text{
+            margin-top: 9%;
+            width: 50%;
+            padding-left: 20px;
+            p{
+                padding-bottom: 21px;
+                font-size: 20px;
+                .white{
+                    color: $color-red;
+                    font-weight: bolder;
+                }
+            }
+         }
+    }
+    #text-down{
+        width: 63%;
+        margin: 5px auto;
+        p{
+            text-align: center;
+            padding-bottom: 30px;
+            color: $color-red;
+            line-height: 25px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+    }
+}
+#skills{
+    width:80%;
+    margin: 0px auto;
+    color: $color-red;
+    padding:20px;
+        h2{
+            padding-top: 50px;
+            text-align: center;
+            color: $color-red;
+        }
+        #language{
+            margin-left: 17%;
+        h3{
+            margin:5px auto;
+        }
+        li{
+            padding: 10px;
+            list-style-type: none;
+            
+        }
+        .bar{
+            background: $bg-color;
+            display: block;
+            height: 30px;
+            width: 80%;
+            border:1px solid rgba(0,0,0,0.3);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                &:hover{
+                    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+                span{
+                    height: 30px;
+                    float: left;
+                    background: linear-gradient(135deg, rgb(53, 0, 4, 0.9)0%, rgb(53, 0, 4, 0.9))100%;
+                }
+                .html{
+                    width:95%;
+                    border-radius: 25px;
+                }
+                .css{
+                    width:80%;
+                    border-radius: 25px;
+                }
+                .sass{
+                    width: 70%;
+                    border-radius: 25px;
+                }
+                .bootstrap{
+                    width:60%;
+                    border-radius: 25px;
+                }
+            }
+        }
+}
+#services{
+    background-color: $bg-color;
+    margin: 40px auto;
+    padding-bottom: 20px;
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        color: $color-red;
+    }
+    #row{
+        @include FlexSpaceBetween;
+        width: 85%;
+        margin: 40px auto;
+        .blok{
+           width: 22%;
+           margin: 30px auto;
+           border: 1px solid $color-red;
+           border-radius: 3%;
+           i{
+            font-size: 40px;
+            color: $color-red;
+            width: 100%;
+            margin: 30px auto;
+            text-align: center;
+           }
+           h3{
+            text-align: center;
+            margin-bottom: 20px;
+            color: $color-red;
+            font-weight: bolder;
+           }
+           p{
+            padding: 20px 15px;
+            text-align: center;
+            line-height: 20px;
+           }
+        }
+    }
+}
+#projects{
+    width: 86%;
+    margin: 50px auto;
+    h2{
+        padding-top: 20px;
+        text-align: center;
+        color: $color-red;
+    }
+     #row2{
+        width: 100%;
+        @include FlexSpaceBetween;
+    .project-block{
+        margin: 70px auto;
+        width: 47%;
+        border: 1px solid white;
+        border-radius: 2%;
+        color: $color-red;
+        img{
+            width: 100%;
+            border-radius: 2%;
+            border: 2px solid $color-red;
+            box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                &:hover{
+                    box-shadow:0 14px 28px rgba(0,0,0,0.4), 0 10px 10px rgba(0,0,0,0.4);
+                }
+        }
+        .text-block{
+            margin: 20px auto;
+            text-align: center;
+            p{
+                margin-top: 20px;
+                font-size: larger;
+            }
+        }
+    }
+    }
+}
+#contact{
+    background-color: $bg-color;
+    padding-bottom: 20px;
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        color: $color-red;
+    }
+    #contactForm{
+        width: 85%;
+        margin: 30px auto;
+        form{
+            text-align: center;
+            margin-top: 20px;
+            .formRow{
+                padding: 16px 20px;
+               #tb1, #tb2 {
+                width: 340px;
+                border: 1px solid $color-red;
+                border-radius: 11px;
+                height: 50px;
+                margin-left: 15px;
+                margin-right: 15px;
+                padding-left: 10px;
+               }
+               #tb3{
+                width: 710px;
+                height: 50px;
+                border: 1px solid $color-red;
+                border-radius: 11px;
+                padding-left: 10px;
+               }
+               #tb4{
+                border: 1px solid $color-red;
+                border-radius: 11px;
+                padding-left: 10px;
+                padding-top: 5px;
+                width: 710px;
+                height: 150px;
+               }
+               #button{
+                width: 100px;
+                height: 30px;
+                border: 1px solid $color-red;
+                border-radius: 6px;
+                color: $color-red;
+               }
+               #button:hover{
+                background-color: $color-red;
+                color: #fff;
+                border-radius: 6px;
+            }
+            }
+        }
+    }
+}
+footer{
+    text-align: center;
+    margin: 10px auto;
+    #social-menu{
+        padding: 10px 20px;
+        font-size: 24px;
+        a{
+            color: $color-red;
+            padding: 10px 17px;
+        }
+    }
+    p{
+        color: $color-red;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+}
+ 
+

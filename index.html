@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="web designer, portfolio, web-design, design, website"/>
+		<meta name="description" content="Web designer"/>
+        <title>Jelena Popadić | Portfolio</title>
+        <link rel="shortcut icon" href="assets/img/logo2.jpg" alt="favicon"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/66c897dbe7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/responsive.css"/>
+    </head>
+    <body>
+        <header>
+            <div id="nav">
+            <div id="logo"><a href="index.html"><img src="assets/img/logo2.jpg"/></a></div>
+            <div id="list">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+            <div id="text-box">
+                <h1>Hello, I'm Jelena, web designer</h1>
+            </div>
+        </header> 
+        <div id="about">
+            <div class="tittle">
+                <h2>About me</h2>
+            </div>
+            <div id="img-text">
+                <div id="image">
+                    <img src="assets/img/slika.jpg" alt="me"/>
+                </div>
+                <div id="text">
+                    <p><span class="white">Full name:</span> Jelena Popadić</p>
+                    <p><span class="white">Age:</span> 19</p>
+                    <p><span class="white">Education: </span> ICT College</p>
+                    <p><span class="white">Index:</span> 94/23</p>
+                    <p><span class="white">Languages: </span>Serbian (native),  English (B2)</p>
+                    <p><span class="white">E-mail:</span> jelena.popadic.94.23@ict.edu.rs</p>
+                </div>
+            </div>
+            <div id="text-down">
+                <p>What I love most about web design is the opportunity to blend creativity with functionality, creating interfaces that not only look beautiful but also serve their intended purpose effectively. I'm constantly inspired by the ever-evolving landscape of web technologies and always strive to stay ahead of the curve.</p>
+            </div>
+        </div>
+        <div id="skills">
+            <h2>My skills</h2>
+            <div id="language">
+            <li><h3>HTML5</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>CSS3</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h3>SASS</h3>
+                <span class="bar"><span class="sass"></span></span>
+            </li>
+            <li><h3>BOOTSTRAP</h3>
+                <span class="bar"><span class="bootstrap"></span></span>
+            </li>
+        </div>
+        </div>
+        <div id="services">
+            <h2>My services</h2>
+            <div id="row">
+                <div class="blok">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>WEB DESIGN</h3>
+                    <p>A UI/UX designer's job is to create user-friendly interfaces that enable users to understand how to use complex technical products.</p>
+                </div>
+                <div class="blok">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>UI/UX DESIGN</h3>
+                    <p>A web designer is responsible for creating the visual design of a website.</p>
+                </div>
+                <div class="blok">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>SEO</h3>
+                    <p>SEO is the process of optimizing websites so that they rank well on search engines</p>
+                </div>
+                <div class="blok">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>DATABASE</h3>
+                    <p>A database is an organized collection of structured information, or data, typically stored electronically in a computer system.</p>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <h2>My projects</h2>
+            <div id="row2">
+                <div class="project-block">
+                    <a href="https://popadicj.github.io/ordinacija/" target="_blank"><img src="assets/img/ordinacija.jpg"/></a>
+                    <div class="text-block">
+                        <h3>Gynecological office</h3>
+                        <p>HTML5, CSS3</p>
+                    </div>
+                </div>
+                <div class="project-block">
+                    <a href="https://popadicj.github.io/ordinacija/" target="_blank"><img src="assets/img/portfolio.jpg"/></a>
+                    <div class="text-block">
+                        <h3>Portfolio</h3>
+                        <p>HTML5, SASS, Responsive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>Contact me</h2>
+            <div id="contactForm">
+                <form id="form1" name="form1" action="contact.php" method="post">
+                    <div class="formRow">
+                        <input type="text" name= "Name" id="tb1" required="required" placeholder="Name :"/>    
+                        <input type="text" name="Number" id="tb2" required="required" placeholder="Phone number:" />
+                    </div>
+                    <div class="formRow">
+                        <input type="email" name="Email" id="tb3" required="required" placeholder="E-mail:" />
+                    </div>          
+                    <div class="formRow">
+                        <textarea id="tb4" name="txtArea" placeholder="Your message ..."  required="required"></textarea>
+                    </div>        
+                    <div class="formRow">
+                        <button type="submit" id="button">Send</button>
+                    </div>                             
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div id="social-menu">
+				<a target="_blank" href="assets/css/style.scss"><i class="fa-brands fa-sass"></i></a>
+				<a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+			    <a target="_blank" href="sitemap.xml"><i class="fa-solid fa-sitemap"></i></a>
+			</div>
+			<div id="copyright">
+				<p>Copyright &copy; 2023 Jelena Popadić. All Rights Reserved</p>
+			</div>
+        </footer>
+    </body>
+</html>

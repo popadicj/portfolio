@@ -1,0 +1,332 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  background-color: #ded8d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #350004;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #350004;
+}
+
+header {
+  height: 600px;
+  background-color: #ded8d5;
+}
+header #nav {
+  display: flex;
+  justify-content: space-between;
+}
+header #nav #logo {
+  width: 100px;
+  height: 90px;
+  margin-left: 70px;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+header #nav #logo img {
+  width: 100%;
+}
+header #nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header #nav ul li {
+  padding-right: 40px;
+  padding-top: 30px;
+  font-weight: bolder;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+header #nav ul a {
+  color: #350004;
+}
+
+#text-box {
+  margin: 12% auto;
+  text-align: center;
+  color: #350004;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+#about {
+  background-color: #ded8d5;
+}
+#about .tittle h2 {
+  padding-top: 40px;
+  text-align: center;
+  color: #350004;
+}
+#about #img-text {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+#about #img-text #image {
+  width: 26%;
+  margin: 30px auto;
+  border: 1px solid #ded8d5;
+  border-radius: 3%;
+}
+#about #img-text #image img {
+  width: 100%;
+  border: 1px solid #ded8d5;
+  border-radius: 3%;
+}
+#about #img-text #text {
+  margin-top: 9%;
+  width: 50%;
+  padding-left: 20px;
+}
+#about #img-text #text p {
+  padding-bottom: 21px;
+  font-size: 20px;
+}
+#about #img-text #text p .white {
+  color: #350004;
+  font-weight: bolder;
+}
+#about #text-down {
+  width: 63%;
+  margin: 5px auto;
+}
+#about #text-down p {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #350004;
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+#skills {
+  width: 80%;
+  margin: 0px auto;
+  color: #350004;
+  padding: 20px;
+}
+#skills h2 {
+  padding-top: 50px;
+  text-align: center;
+  color: #350004;
+}
+#skills #language {
+  margin-left: 17%;
+}
+#skills #language h3 {
+  margin: 5px auto;
+}
+#skills #language li {
+  padding: 10px;
+  list-style-type: none;
+}
+#skills #language .bar {
+  background: #ded8d5;
+  display: block;
+  height: 30px;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#skills #language .bar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+#skills #language .bar span {
+  height: 30px;
+  float: left;
+  background: linear-gradient(135deg, rgba(53, 0, 4, 0.9) 0%, rgba(53, 0, 4, 0.9)) 100%;
+}
+#skills #language .bar .html {
+  width: 95%;
+  border-radius: 25px;
+}
+#skills #language .bar .css {
+  width: 80%;
+  border-radius: 25px;
+}
+#skills #language .bar .sass {
+  width: 70%;
+  border-radius: 25px;
+}
+#skills #language .bar .bootstrap {
+  width: 60%;
+  border-radius: 25px;
+}
+
+#services {
+  background-color: #ded8d5;
+  margin: 40px auto;
+  padding-bottom: 20px;
+}
+#services h2 {
+  padding-top: 50px;
+  text-align: center;
+  color: #350004;
+}
+#services #row {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 40px auto;
+}
+#services #row .blok {
+  width: 22%;
+  margin: 30px auto;
+  border: 1px solid #350004;
+  border-radius: 3%;
+}
+#services #row .blok i {
+  font-size: 40px;
+  color: #350004;
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+#services #row .blok h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #350004;
+  font-weight: bolder;
+}
+#services #row .blok p {
+  padding: 20px 15px;
+  text-align: center;
+  line-height: 20px;
+}
+
+#projects {
+  width: 86%;
+  margin: 50px auto;
+}
+#projects h2 {
+  padding-top: 20px;
+  text-align: center;
+  color: #350004;
+}
+#projects #row2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#projects #row2 .project-block {
+  margin: 70px auto;
+  width: 47%;
+  border: 1px solid white;
+  border-radius: 2%;
+  color: #350004;
+}
+#projects #row2 .project-block img {
+  width: 100%;
+  border-radius: 2%;
+  border: 2px solid #350004;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#projects #row2 .project-block img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+#projects #row2 .project-block .text-block {
+  margin: 20px auto;
+  text-align: center;
+}
+#projects #row2 .project-block .text-block p {
+  margin-top: 20px;
+  font-size: larger;
+}
+
+#contact {
+  background-color: #ded8d5;
+  padding-bottom: 20px;
+}
+#contact h2 {
+  padding-top: 50px;
+  text-align: center;
+  color: #350004;
+}
+#contact #contactForm {
+  width: 85%;
+  margin: 30px auto;
+}
+#contact #contactForm form {
+  text-align: center;
+  margin-top: 20px;
+}
+#contact #contactForm form .formRow {
+  padding: 16px 20px;
+}
+#contact #contactForm form .formRow #tb1, #contact #contactForm form .formRow #tb2 {
+  width: 340px;
+  border: 1px solid #350004;
+  border-radius: 11px;
+  height: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 10px;
+}
+#contact #contactForm form .formRow #tb3 {
+  width: 710px;
+  height: 50px;
+  border: 1px solid #350004;
+  border-radius: 11px;
+  padding-left: 10px;
+}
+#contact #contactForm form .formRow #tb4 {
+  border: 1px solid #350004;
+  border-radius: 11px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 710px;
+  height: 150px;
+}
+#contact #contactForm form .formRow #button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #350004;
+  border-radius: 6px;
+  color: #350004;
+}
+#contact #contactForm form .formRow #button:hover {
+  background-color: #350004;
+  color: #fff;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  margin: 10px auto;
+}
+footer #social-menu {
+  padding: 10px 20px;
+  font-size: 24px;
+}
+footer #social-menu a {
+  color: #350004;
+  padding: 10px 17px;
+}
+footer p {
+  color: #350004;
+  font-weight: 500;
+  padding-top: 10px;
+}/*# sourceMappingURL=style.css.map */
